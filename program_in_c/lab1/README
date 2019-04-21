@@ -1,0 +1,24 @@
+Author: Chenghao Du
+Time:   2019.1.10
+
+Description:
+This is a simple program to search word in a text file. 
+It will report the file size and how many times that word appears in the file.
+
+Compile:
+To compile the program, type "make", and the "makefile" will directly help you compile the count.c
+
+Clean the compiled file:
+To clean the program, type "make clean"
+
+Run program:
+After you compile the program, type "./count input_file word_for_search output_file",
+input_file:         The file you want to search the word
+word_for_search:    The word you want to search
+output_file:        The output file, must be a name different to the input file.
+                    It contains the size of input file and the count of the word you search.
+
+Example:
+count example1 "Sly Fox" example1out       
+Size of file is 8289
+Number of matches = 25

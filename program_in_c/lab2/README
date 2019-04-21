@@ -1,0 +1,31 @@
+CSE5462 lab2
+Author: Chenghao Du, Yongjeong Kim
+Time:   2019.1.23
+
+Description:
+This is a simple ftp program to send file from client to the server.
+The server will check the file size and check if it get the correct file.
+
+Compile:
+To compile the program, type "make", and the "makefile" will directly help you compile the count.c
+
+Clean the compiled file:
+To clean the program, type "make clean"
+
+Run program:
+To get the server IP address, in in the server-side Terminal, type: ifconfig
+The you will see the following:
+
+en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	ether 64:76:ba:b3:27:90 
+	inet6 fe80::1840:aec4:b0ca:32ef%en0 prefixlen 64 secured scopeid 0x5 
+	inet 172.31.52.110 netmask 0xfffff000 broadcast 172.31.63.255
+	nd6 options=201<PERFORMNUD,DAD>
+	media: autoselect
+	status: active
+
+"172.31.52.110" in this table is the server's IP address.
+
+To run the server, in the Terminal, type: ./ftps <local-port>
+
+To run the client, in the Terminal, type: ./ftpc <remote-IP> <remote-port> <local-file-to-transfer>
